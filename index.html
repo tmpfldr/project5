@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Cooks</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles for the homepage */
+    .homepage {
+      text-align: center;
+      color: white;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .homepage h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .homepage p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .homepage button {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .homepage button:hover {
+      background: #ff3b2f;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="homepage">
+    <h1>Welcome to Math Cooks!</h1>
+    <p>Where numbers and equations come together to create something magical. 🧮✨</p>
+    <p>Ready to test your math skills? Let's dive into the world of inverse functions!</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      // Redirect to the quiz page
+      window.location.href = 'quiz_main.html';
+    }
+  </script>
+</body>
+</html>

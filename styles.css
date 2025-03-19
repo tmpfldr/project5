@@ -1,0 +1,114 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quiz container */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  margin: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Progress bar */
+.progress-bar {
+  height: 5px;
+  background: #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background: #007bff;
+  transition: width 0.3s ease;
+}
+
+/* Question container */
+.question-container {
+  margin: 20px 0;
+}
+
+.question-number {
+  color: #007bff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Answers */
+.answers label {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answers label:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Results */
+#results {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e9ecef;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
